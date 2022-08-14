@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:my_note_app/presentation/home/home_page.dart';
+import 'package:my_note_app/presentation/login/login_page.dart';
+import 'package:my_note_app/presentation/register/register_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,8 +14,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'DailyToDo',
       theme: ThemeData(
+        fontFamily: "KumbhSans",
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the
@@ -24,7 +29,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Container(),
+      home: HomePage(),
     );
   }
 }
